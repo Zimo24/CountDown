@@ -3,13 +3,16 @@ function countWeekdays(startDate, endDate) {
     const curDate = new Date(startDate);
 
     while (curDate <= endDate) {
-        count++;
+        const dayOfWeek = curDate.getDay();
+        if (dayOfWeek !== 0 && dayOfWeek !== 6) {
+            count++;
+        }
         curDate.setDate(curDate.getDate() + 1);
     }
     return count;
 }
 
-const targetDate = new Date('June 6, 2024 12:30:00');
+const targetDate = new Date('June 7, 2024 12:30:00');
 
 const countdownInterval = setInterval(() => {
     const now = new Date();
