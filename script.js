@@ -4,9 +4,7 @@ function countWeekdays(startDate, endDate) {
 
     while (curDate <= endDate) {
         const dayOfWeek = curDate.getDay();
-        if (dayOfWeek !== 0 && dayOfWeek !== 6) {
-            count++;
-        }
+        count++;
         curDate.setDate(curDate.getDate() + 1);
     }
     return count;
