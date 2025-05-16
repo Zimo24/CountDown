@@ -9,7 +9,7 @@ function countWeekdays(startDate, endDate) {
         }
         curDate.setDate(curDate.getDate() + 1);
     }
-    return 0;
+    return count;
 }
 
 const targetDate = new Date('June 5, 2025 12:30:00');
