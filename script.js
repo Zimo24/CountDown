@@ -41,7 +41,7 @@ const countdownInterval = setInterval(() => {
 
     // Confetti animation
     const confettiContainer = document.querySelector('.confetti');
-    for (let i = 0; i < 500; i++) {
+    for (let i = 0; i < 200; i++) {
         const confettiPiece = document.createElement('div');
         confettiPiece.classList.add('confetti-piece');
         confettiPiece.style.left = Math.random() * 100 + 'vw';
@@ -52,7 +52,7 @@ const countdownInterval = setInterval(() => {
 
     // Balloon animation
     const balloonContainer = document.querySelector('.balloons');
-    for (let i = 0; i < 500; i++) {
+    for (let i = 0; i < 200; i++) {
         const balloon = document.createElement('p');
         balloon.classList.add('balloon');
         balloon.style.left = Math.random() * 100 + 'vw';
