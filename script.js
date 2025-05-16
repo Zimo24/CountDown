@@ -12,7 +12,7 @@ function countWeekdays(startDate, endDate) {
     return count;
 }
 
-const targetDate = new Date('June 5, 2025 15:00:00');
+const targetDate = new Date('June 5, 2025 3:00:00 PM');
 
 const countdownInterval = setInterval(() => {
     const now = new Date();
